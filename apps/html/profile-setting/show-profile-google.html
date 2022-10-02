@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>โปรไฟล์ • Restgo-affiliate</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="/restgo-affiliate/apps/css/bootstrap.css">
+    <link rel="stylesheet" href="/restgo-affiliate/apps/css/template/template.css">
+</head>
+<body class="page-profile-data">
+    <header class="site-header">
+        <a href="" class="nav-link logo">
+            <img src="/restgo-affiliate/apps/img/restgo_logo.png" alt="">
+        </a>
+        <div class="nav site-navigator">
+            <a class="nav-link" href="/restgo-affiliate/apps/html/menu/dashboard.html">แดชบอร์ด</a>
+            <a class="nav-link" href="/restgo-affiliate/apps/html/menu/generate-link.html">เครื่องมือ</a>
+            <!-- <a class="nav-link disabled" href="">รายงาน</a>
+            <a class="nav-link" href="#">บัญชี</a> -->
+        </div>
+
+        <div class="menu" id="navbarNav">
+            <div class="navbar-nav">
+                <div class="header-menu hstack gap-1">
+                    <!-- <a class="btn mb-0" href="/restgo-affiliate/apps/html/signing/signup.html">สมัครสมาชิก</a>
+                    <a class="btn btn-primary d-lg-inline-block mb-0" href="/restgo-affiliate/apps/html/signing/signin.html">เข้าสู่ระบบ</a> -->
+                    <!-- <div class="notifications">
+                        <i class="fas fa-bell"></i>
+                        <span class="num-count">2</span>
+                    </div> -->
+                    <div class="header-dropdown">
+                        <div class="user-menu">
+                            <article>
+                                <i class="fas fa-user"></i>
+                                <p class="mb-0 px-1 ms-1">
+                                    aoey.chonlaphat@gmail.com
+                                </p>
+                                <i class="fas fa-sort-down" style="padding-bottom: .25rem;"></i>
+                        </article>
+                        </div>
+
+                        <div class="header-dropdown-menu">
+                            <div class="wrapper">
+                                <div class="user-hi">
+                                    <h2 style="font-size: 1.25rem;">
+                                        สวัสดีคุณ
+                                    </h2>
+                                    <h2 style="font-size: 1rem;">
+                                        aoey.chonlaphat@gmail.com
+                                    </h2>
+                                </div>
+                                <ul class="mb-0 ps-0">
+                                    <!-- <li class="menu-item">
+                                        <a href="/restgo-affiliate/apps/html/profile-setting/show-profile.html">
+                                            <span class="menu-icon">
+                                                <i class="fas fa-user me-2"></i>
+                                            </span>
+                                            <div class="user-details">
+                                                <p class="mb-0">บัญชีของฉัน</p>
+                                            </div>
+                                            <span class="ms-auto">
+                                                <i class="fas fa-chevron-right"></i>
+                                            </span>
+                                        </a>
+                                    </li> -->
+                                    <li class="menu-item">
+                                        <a href="/restgo-affiliate/apps/html/landing/index.html">
+                                            <span class="menu-icon">
+                                                <i class="fas fa-sign-out-alt me-1"></i>
+                                            </span>
+                                            <div class="user-details">
+                                                <p class="mb-0">ออกจากระบบ</p>
+                                            </div>
+                                            <span class="ms-auto">
+                                                <i class="fas fa-chevron-right"></i>
+                                            </span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <main class="personal-data">
+        <!-- <section class="section-title">
+            <div class="container">
+                <h1>บัญชี</h1>
+            </div>
+        </section> -->
+
+        <section class="section section-personal">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="content">
+                            <article class="word-header">
+                                <h3>บัญชี Restgo Affiliate</h3>
+                                <p>รายละเอียดข้อมูลส่วนตัวและช่องทางการติดต่อ</p>
+                            </article>
+
+                            <div class="input-info mb-3" id="showEmail">
+                                <fieldset>
+                                    <form>
+
+                                        <div class="d-flex justify-content-between">
+                                            <h4>ข้อมูลบัญชี</h4>
+                                            <div class="edit-info">
+                                                <!-- <a class="btn-edt" id="show-editPsw" role="button">
+                                                    เปลี่ยนรหัสผ่าน
+                                                </a> -->
+                                            </div>
+                                        </div>
+     
+                                        <div class="data-row mb-0">
+                                            <dl>
+                                                <dt>อีเมล</dt>
+                                                <dd>email@address.com</dd>
+                                            </dl>
+                                        </div>  
+
+                                    </form>
+                                </fieldset>
+                            </div>
+
+
+                            <div class="d-none" id="edtPsw">
+                                <div class="input-info mb-3">
+                                    <div class="d-flex justify-content-between">
+                                        <h4>ข้อมูลบัญชี</h4>
+                                        <div class="edit-info">
+                                            <a class="btn-edt" id="btn-cancleedtPsw" role="button">
+                                                ยกเลิก
+                                            </a>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="row">
+                                        <div class="form-group mb-3">
+                                            <label class="form-label">
+                                                <span>อีเมล</span>
+                                            </label>
+                                            <div>
+                                                <span>email@address.com</span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="form-group mb-3">
+                                            <label for="currentpassword" class="form-label d-flex">
+										        <span>รหัสผ่านปัจจุบัน</span>
+                                                <span class="ms-1" style="color: red;">*</span>
+                                            </label>
+                                            <input type="password" class="form-control is-invalid" id="currentpassword">
+                                            <div id="validationServer05Feedback" class="invalid-feedback">
+                                                รหัสผ่านปัจจุบันไม่ถูกต้อง
+                                            </div>
+                                        </div>
+									</div>
+	
+									<div class="row">
+										<div class="form-group mb-3">
+                                            <label for="newpassword" class="form-label d-flex">
+										        <span>รหัสผ่านใหม่</span>
+                                                <span class="ms-1" style="color: red;">*</span>
+                                            </label>
+                                            <input type="password" class="form-control is-invalid" id="newpassword">
+                                            <div id="validationServer05Feedback" class="invalid-feedback">
+                                                ห้ามตั้งรหัสผ่านซ้ำกับรหัสผ่านปัจจุบัน
+                                            </div>
+                                        </div>
+									</div>
+
+									<div class="row">
+										<div class="form-group mb-3">
+                                            <label for="repeatpassword" class="form-label d-flex">
+										        <span>ยืนยันรหัสผ่านใหม่</span>
+                                                <span class="ms-1" style="color: red;">*</span>
+                                            </label>
+                                            <input type="password" class="form-control is-invalid" id="repeatpassword">
+                                            <div id="validationServer05Feedback" class="invalid-feedback">
+                                                รหัสผ่านไม่ตรงกัน โปรดลองอีกครั้ง
+                                            </div>
+                                        </div>
+									</div>
+
+                                    <div class="edit-info">
+                                        <a class="btn btn-primary" id="btnEmailPsw">บันทึก</a>
+                                    </div>
+                                    <fieldset> 
+                                        <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
+                                            <div id="ToastbtnEmailPsw" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+                                            <div class="toast-header">
+                                                <strong class="me-auto">
+                                                    <i class="fas fa-check-circle"></i>
+                                                    บันทึกสำเร็จ!</strong>
+                                                <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                                            </div>
+                                            <div class="toast-body">
+                                                รหัสผ่านใหม่ถูกอัพเดทเรียบร้อยแล้ว
+                                            </div>
+                                            </div>
+                                        </div>
+                                    </fieldset>  
+                                </div>
+                            </div>
+
+                            <div class="input-info mb-3" id="showpersonal-data">
+                                <fieldset>
+                                    <form>
+
+                                        <div class="d-flex justify-content-between">
+                                            <h4>ข้อมูลส่วนตัว</h4>
+                                            <div class="edit-info">
+                                                <a class="btn-edt" id="show-editPersonalData" role="button">
+                                                    แก้ไข
+                                                </a>
+                                            </div>
+                                        </div>
+                                
+                                        <div class="data-row">
+                                            <dl>
+                                                <dt>ชื่อ</dt>
+                                                <dd>Nisarat Bunluerat</dd>
+                                            </dl>
+                                        </div>
+                                        <div class="data-row mb-0">
+                                            <dl>
+                                                <dt>วันเกิด</dt>
+                                                <dd>10/05/2000</dd>
+                                            </dl>
+                                        </div>  
+
+                                    </form>
+                                </fieldset>
+                            </div>
+
+                            <div class="d-none" id="edtPersonalData">
+                                <div class="input-info mb-3" >
+                                    <div class="d-flex justify-content-between">
+                                        <h4>ข้อมูลส่วนตัว</h4>
+                                        <div class="edit-info">
+                                            <a class="btn-edt" id="btn-canclePersonalData" role="button">
+                                                ยกเลิก
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="form-group col-md-6 mb-3">
+                                            <div class="d-flex">
+                                                <label for="firstname" class="form-label">ชื่อ</label>
+                                                <span class="ms-1" style="color: red;">*</span>
+                                            </div>                                            
+                                            <input type="text" class="form-control is-invalid" id="firstname" placeholder="กรอกข้อมูล" value="Nisarat">
+                                            <div id="validationServer05Feedback" class="invalid-feedback">
+                                                จำเป็นต้องกรอกข้อมูล
+                                            </div>
+                                        </div>
+                                        <div class="form-group col-md-6 mb-3">
+                                            <div class="d-flex">
+                                                <label for="lastname" class="form-label">นามสกุล</label>
+                                                <span class="ms-1" style="color: red;">*</span>
+                                            </div>                                            <input type="text" class="form-control is-invalid" id="lastname" placeholder="กรอกข้อมูล" value="Bunluerat">
+                                            <div id="validationServer05Feedback" class="invalid-feedback">
+                                                จำเป็นต้องกรอกข้อมูล
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="form-group mb-3">
+                                            <div class="d-flex">
+                                                <label for="birthdate" class="form-label">วันเกิด</label>
+                                                <span class="ms-1" style="color: red;">*</span>
+                                            </div>                                            
+                                            <input type="date" class="form-control is-invalid" id="birthdate" placeholder="">
+                                            <div id="validationServer05Feedback" class="invalid-feedback">
+                                                จำเป็นต้องกรอกข้อมูล
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="edit-info">
+                                        <a class="btn btn-primary" id="btnPersonal">บันทึก</a>
+                                    </div>
+                                    <fieldset> 
+                                        <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
+                                            <div id="ToastbtnPersonal" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+                                            <div class="toast-header">
+                                                <strong class="me-auto">
+                                                    <i class="fas fa-check-circle"></i>
+                                                    บันทึกสำเร็จ!</strong>
+                                                <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                                            </div>
+                                            <div class="toast-body">
+                                                ข้อมูลส่วนตัวถูกอัพเดทเรียบร้อยแล้ว
+                                            </div>
+                                            </div>
+                                        </div>
+                                    </fieldset>  
+
+                                </div>
+                            </div>
+
+                            <div class="input-info" id="showcontact-data">
+                                <fieldset>
+                                    <form>
+                                    <div class="d-flex justify-content-between">
+                                        <h4>ช่องทางการติดต่อ</h4>
+                                        <div class="edit-info">
+                                            <a class="btn-edt" id="show-editContactData" role="button">
+                                                แก้ไข
+                                            </a>
+                                        </div>
+                                    </div>
+                                
+                                        <div class="data-row">
+                                            <dl>
+                                                <dt>ที่อยู่</dt>
+                                                <dd>
+                                                    169 มหาวิทยาลัยบูรพา ถนน ลงหาดบางแสน
+                                                </dd>
+                                                <dd>
+                                                    จังหวัดชลบุรี อำเภอเมืองชลบุรี ตำบลแสนสุข 20130
+                                                </dd>
+                                            </dl>
+                                        </div>
+                                    </form>
+                                </fieldset>
+                            </div>
+
+                            <div class="d-none" id="edtContactData">
+                                <div class="input-info" id="showcontact-data">
+                                    <fieldset>
+                                        <form>
+                                        <div class="d-flex justify-content-between">
+                                            <h4>ช่องทางการติดต่อ</h4>
+                                            <div class="edit-info">
+                                                <a class="btn-edt" id="btn-cancleContactData" role="button">
+                                                    ยกเลิก
+                                                </a>
+                                            </div>
+                                        </div>
+                                    
+                                        <div class="row">
+                                            <div class="form-group mb-3">
+                                                <div class="d-flex">
+                                                    <label for="address-detail" class="form-label">ที่อยู่</label>
+                                                    <span class="ms-1" style="color: red;">*</span>
+                                                </div>
+                                                <textarea class="form-control is-invalid" id="address-detail" rows="2" placeholder="กรอกข้อมูล"></textarea>   
+                                                <div id="validationServer05Feedback" class="invalid-feedback">
+                                                    จำเป็นต้องกรอกข้อมูล
+                                                </div>
+                                            </div>
+                                            
+
+                                            <div class="form-group mb-3">
+                                                <div class="d-flex">
+                                                    <label for="province" class="form-label">จังหวัด</label>
+                                                    <span class="ms-1" style="color: red;">*</span>
+                                                </div>                                                
+                                                <select class="form-select is-invalid" id="province" required>
+                                                    <option selected disabled value="">เลือก</option>
+                                                    <option>...</option>
+                                                    <option>...</option>
+                                                </select>
+                                                <div id="validationServer05Feedback" class="invalid-feedback">
+                                                    จำเป็นต้องเลือกข้อมูล
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group mb-3">
+                                                <div class="d-flex">
+                                                    <label for="district" class="form-label">อำเภอ/เขต</label>
+                                                    <span class="ms-1" style="color: red;">*</span>
+                                                </div>                                                
+                                                <select class="form-select is-invalid" id="district" required>
+                                                    <option selected disabled value="">เลือก</option>
+                                                    <option>...</option>
+                                                    <option>...</option>
+                                                </select>
+                                                <div id="validationServer05Feedback" class="invalid-feedback">
+                                                    จำเป็นต้องเลือกข้อมูล
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group mb-3">
+                                                <div class="d-flex">
+                                                    <label for="subdistrict" class="form-label">ตำบล/แขวง</label>
+                                                    <span class="ms-1" style="color: red;">*</span>
+                                                </div>                                                
+                                                <select class="form-select is-invalid" id="subdistrict" required>
+                                                    <option selected disabled value="">เลือก</option>
+                                                    <option>...</option>
+                                                    <option>...</option>
+                                                </select>
+                                                <div id="validationServer05Feedback" class="invalid-feedback">
+                                                    จำเป็นต้องเลือกข้อมูล
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group mb-3">
+                                                <div class="d-flex">
+                                                    <label for="zipcode" class="form-label">รหัสไปรษณีย์</label>
+                                                    <span class="ms-1" style="color: red;">*</span>
+                                                </div>                                                
+                                                <input type="text" maxlength="5" class="form-control is-invalid" id="zipcode" placeholder="กรอกข้อมูล">
+                                                <div id="validationServer05Feedback" class="invalid-feedback">
+                                                    จำเป็นต้องกรอกข้อมูล
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="edit-info">
+                                                <a class="btn btn-primary" id="btnContact">บันทึก</a>
+                                            </div>
+                                            <fieldset> 
+                                                <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
+                                                    <div id="ToastbtnContact" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+                                                    <div class="toast-header">
+                                                        <strong class="me-auto">
+                                                            <i class="fas fa-check-circle"></i>
+                                                            บันทึกสำเร็จ!</strong>
+                                                        <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                                                    </div>
+                                                    <div class="toast-body">
+                                                        ที่อยู่ถูกอัพเดทเรียบร้อยแล้ว
+                                                    </div>
+                                                    </div>
+                                                </div>
+                                            </fieldset>  
+                                        </div>
+                                        </form>
+                                    </fieldset>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-personal-data">
+                <div class="row g-3">
+                    <div class="col-md-3">
+                        <div class="footer-header">
+                            <h3>แดชบอร์ด</h3>
+                        </div>
+                        <nav class="footer-nav">
+                            <a class="nav-link disabled" href="">จำนวนการเข้าชม</a>
+                            <a class="nav-link disabled" href="">จำนวนการจอง</a>
+                            <a class="nav-link disabled" href="">ค่าคอมมิชชั่น</a>
+                        </nav>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="footer-header">
+                            <h3>เครื่องมือ</h3>
+                        </div>
+                        <nav class="footer-nav">
+                            <a class="nav-link disabled" href="">ไฟล์ข้อมูลที่พัก</a>
+                            <a class="nav-link disabled" href="">ลิงก์เว็บไซต์</a>
+                            <a class="nav-link disabled" href="">แบนเนอร์</a>
+                        </nav>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="footer-header">
+                            <h3>รายงาน</h3>
+                        </div>
+                        <nav class="footer-nav">
+                            <a class="nav-link disabled" href="">รายงานข้อมูลการจอง</a>
+                        </nav>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="footer-header">
+                            <h3>การใช้งาน</h3>
+                        </div>
+                        <nav class="footer-nav">
+                            <a class="nav-link disabled" href="">คู่มือการใช้งาน</a>
+                            <a class="nav-link disabled" href="">วิธีการทำงาน</a>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <div class="about-us">
+                <a class="nav-logo" href="">
+                    <img src="/restgo-affiliate/apps/img/restgo_logo.png" alt="">
+                </a>
+                <article class="salogan">
+                    <p class="mb-0">
+                        ค้นหาโรงแรมราคาถูกกับ Rest go โดยใช้เครื่องมือการค้นหาโรงแรมเพื่อหาดีลโรงแรมที่ถูกที่สุดของจุดหมายปลายทางหลักทั้งหมดจากทั่วโลก
+                    </p>
+                    <p>Get the best prices on 2,000,000+ properties, worldwide</p>
+                </article>
+            </div>
+            <div class="copyright">
+                <p class="mb-0">© 2021 Tenfuse Co., Ltd. All Rights Reserved.</p>
+                <nav class="policy-link d-flex">
+                    <a class="nav-link disabled" href="">Privacy Policy</a>
+                    <a class="nav-link disabled" href="">Cookie Policy</a>
+                </nav>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src="/restgo-affiliate/apps/js/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="/restgo-affiliate/apps/js/bootstrap.js"></script>
+    <script src="/restgo-affiliate/apps/js/scritp.js"></script>
+</body>
+</html>
